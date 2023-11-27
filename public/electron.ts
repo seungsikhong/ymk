@@ -1,12 +1,17 @@
 import * as path from "path";
 import * as url from "url";
 
-import { app, BrowserWindow } from "electron";
+import { app, BrowserWindow, Menu, Tray } from "electron";
 import * as isDev from "electron-is-dev";
 
 const baseUrl: string = "http://localhost:3000";
 
 let mainWindow: BrowserWindow | null;
+
+// function iniTrayIcionMenu(): void {
+//   let tray: Tray;
+//   tray = new Tray('');
+// }
 
 function createMainWindow(): void {
   mainWindow = new BrowserWindow({

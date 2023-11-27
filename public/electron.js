@@ -6,6 +6,10 @@ var electron_1 = require("electron");
 var isDev = require("electron-is-dev");
 var baseUrl = "http://localhost:3000";
 var mainWindow;
+// function iniTrayIcionMenu(): void {
+//   let tray: Tray;
+//   tray = new Tray('');
+// }
 function createMainWindow() {
     mainWindow = new electron_1.BrowserWindow({
         width: 1080,
